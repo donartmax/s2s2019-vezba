@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="style.css">
-    <title>Web aplikacija 2019</title>
+
+    <!-- integrisali smo u html bootstrap ovim linkom -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- dodavanje favicona, odnosno logoa na tab stranice -->
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- naslov koji se pojavljuje odmah pored favicona, tj. kao naslov samog sajta -->
+    <title>Naslov stranice</title>
 </head>
 
 <body>
+
+    <!-- neki tagovi koji se ne zatvaraju: -->
+    <!-- <link rel="stylesheet" href=""> -->
+    <!-- <img src="" alt=""/> -->
+    <!-- <hr> -->
+
+    <p class="boja-crveno">Ovaj tekst ima crvenu boju</p>
+
+    <p id="vrh">Tekst ce biti na vrhu</p>
+
     <!-- paragraf -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi cupiditate ea quam voluptatem nobis alias
         blanditiis illum maxime molestias laborum, ut deserunt, similique dolores numquam quibusdam vel quas eligendi!
     </p>
 
-    <a href="drugi.html">Link za drugi html fajl</a>
-
     <!-- h tagovi -->
     <h1>Naslov 1</h1>
     <h5>Naslov 5</h5>
 
-    <!-- linkovi -->
-    <!-- target="_blank" je za otvaranje stranice u novom tabu -->
-    <a href="http://s2s.fonis.rs/" target="_blank">S2S</a>
+    <p class="gore-desno">
+        Ovo ide gore desno
+    </p>
 
     <ol>
         <li>Menadzment</li>
@@ -42,43 +57,67 @@
         </tr>
     </table>
 
-    <img src="img.jpeg" />
-    <hr>
+    <!-- linkovi -->
+    <!-- target="_blank" je za otvaranje stranice u novom tabu -->
+    <a href="http://s2s.fonis.rs/" target="_blank">S2S</a>
 
-    <div class="div-1">
-        <img src="img.jpeg" />
-    </div>
+    <!-- dugme koji stoji u uglu za povratak na pocetak stranice -->
+    <a class="btn-danger" href="#ovde">Skroluj na element #ovde</a>
+
+    <a href="#" class="na-vrh">
+        <img src="img/top.png" />
+    </a>
+
+    <!-- divovi -->
 
     <div id="div-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magni dolorum voluptate aperiam esse libero
             culpa porro! Deleniti tempore et natus quasi maxime saepe a! Tenetur corrupti modi dolores delectus!</p>
     </div>
 
-    <div class="boja-crveno pozadina-plavo">
-
-        oaisjdioajsdioajd jasd jaod
-        <h4>Neki h4 naslov</h4>
-        <h4>Neki drugi </h4>
+    <div id="sakriveno">
+        Ovaj tekst ne treba da se vidi
     </div>
 
-    <p class="boja-crveno pozadina-plavo">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quasi explicabo cupiditate ipsa? Blanditiis
-        beatae numquam autem necessitatibus eligendi! Similique pariatur ratione odio rerum animi beatae quia adipisci
-        labore. Explicabo.
+    <div id="ovde">
+        Ovde treba da se skroluje
+    </div>
+
+    <!-- ovde je display: inline; -->
+    <div class="inline">
+        Neki tekst inline
+    </div>
+
+    <!-- u css imamo za ovaj div display: inline-block; -->
+    <div class="inline-b">
+        Neki tekst inline block
+    </div>
+
+    <!-- ovi elementi su poredjani jedan ispord drugog, pogledaj css fajl -->
+    <div class="elementi">
+        <div>
+            <img src="img/slika1.jpg" />
+        </div>
+        <div>
+            <img src="img/slika2.jpg" />
+        </div>
+        <div>
+            <img src="img/slika3.jpg" />
+        </div>
+    </div>
+
+    <img id="animacija" class="wobble-hor-bottom" src="img/slika4.jpg" />
+
+    <p class="razmak text-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto officia sed animi.
+        Reprehenderit
+        dolores,
+        eligendi explicabo earum sequi eum officia odio ab qui atque iusto, aspernatur ratione, sint voluptatibus
+        delectus!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eaque sint quod vero optio quaerat nemo, ratione
+        quas quae velit, veniam, eveniet minus dignissimos culpa. Totam fuga quam cum ipsam?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis saepe, labore impedit numquam officia fugiat eum
+        nisi! Nobis molestiae ad voluptates, esse quam rem, eos, alias ab libero pariatur perferendis.
     </p>
-
-    <h4>Neki drugi h4 naslov</h4>
-
-    <div class="boja-crveno">
-        Tekst za div koji ima samo boja crveno
-    </div>
-
-    <!-- forma  -->
-    <form>
-        <input type="text">
-        <button>Posalji</button>
-    </form>
-
 </body>
 
 </html>
